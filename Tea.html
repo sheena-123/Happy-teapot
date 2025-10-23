@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <style>
+    .card-img-top {
+      height: 300px;
+      object-fit: fill;
+    }
+  </style>
+  </head>
+  <body>
+    <!-- navigation --> 
+<section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+  <div class="container-fluid">
+     <a class="navbar-brand" href="#">
+      <img src="images/logo.png" alt="Logo" width="80" height="80" class="d-inline-block align-text-middle">
+     HAPPY TEAPOT 
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house-fill" style="font-style: normal;"> Home</i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html"><i class="bi bi-file-person"></i>About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-list"></i>
+            Products
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Cold drinks.html"><i class="bi bi-cup-straw"></i>Cold Drinks</a></li>
+            <li><hr class="dropdown-divider"></li>
+             <li><a class="dropdown-item" href="Tea.html"><i class="bi bi-cup-hot"></i></i>Tea</a></li>
+            <li><hr class="dropdown-divider"></li>
+             <li><a class="dropdown-item" href="Products.html" ><i class="bi bi-cup-hot"></i></i>All Products</a></li>
+          </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html" ><i class="bi bi-envelope"></i>Contact Us</a>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link Cart" href="cart.html"><i class="bi bi-cart"></i>Cart</a>
+        </li>
+      </ul>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+  <a class="btn btn-outline-primary me-md-2" href="Register.html"><i class="bi bi-person-plus"></i>Register</a>
+  <a class="btn btn-primary me-md-2" href="login.html"><i class="bi bi-box-arrow-right"></i>Log-In</a>
+</div>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
+  </div>
+  </div>
+</nav>
+</section>
+<!-- end navigation -->
+
+<!-- Tea Products Content -->
+<section class="py-5">
+  <div class="container">
+    <h1 class="text-center mb-5">Our Tea Selection</h1>
+    <div class="row">
+      <!-- Green Tea -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="images/tea-feature.jpg" class="card-img-top" alt="Green Tea" data-bs-toggle="modal" data-bs-target="#greenTeaModal" style="cursor: pointer;">
+          <div class="card-body">
+            <h5 class="card-title">Green Tea</h5>
+            <p class="card-text">Refreshing green tea with a light and grassy flavor, perfect for a calming experience.</p>
+            <p class="card-text"><strong>P120</strong></p>
+            <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Black Tea -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="images/black tea.webp" class="card-img-top" alt="Black Tea" data-bs-toggle="modal" data-bs-target="#blackTeaModal" style="cursor: pointer;">
+          <div class="card-body">
+            <h5 class="card-title">Black Tea</h5>
+            <p class="card-text">Bold and robust black tea, ideal for a strong cup with a rich, malty taste.</p>
+            <p class="card-text"><strong>P140</strong></p>
+            <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Herbal Tea -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="images/herbal tea.webp" class="card-img-top" alt="Herbal Tea" data-bs-toggle="modal" data-bs-target="#herbalTeaModal" style="cursor: pointer;">
+          <div class="card-body">
+            <h5 class="card-title">Herbal Tea</h5>
+            <p class="card-text">Caffeine-free herbal infusion with chamomile and mint for relaxation.</p>
+            <p class="card-text"><strong>P130</strong></p>
+            <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Oolong Tea -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="images/Oolong-green-tea-in-a-teapot-with-chawan-bowls.webp" class="card-img-top" alt="Oolong Tea" data-bs-toggle="modal" data-bs-target="#oolongTeaModal" style="cursor: pointer;">
+          <div class="card-body">
+            <h5 class="card-title">Oolong Tea</h5>
+            <p class="card-text">Semi-oxidized tea with a floral aroma and smooth, complex flavor.</p>
+            <p class="card-text"><strong>P180</strong></p>
+            <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- White Tea -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="images/white tea.jpg" class="card-img-top" alt="White Tea" data-bs-toggle="modal" data-bs-target="#whiteTeaModal" style="cursor: pointer;">
+          <div class="card-body">
+            <h5 class="card-title">White Tea</h5>
+            <p class="card-text">Delicate white tea with subtle sweetness and minimal processing.</p>
+            <p class="card-text"><strong>P200</strong></p>
+            <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Chai Tea -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="images/chai tea.webp" class="card-img-top" alt="Chai Tea" data-bs-toggle="modal" data-bs-target="#chaiTeaModal" style="cursor: pointer;">
+          <div class="card-body">
+            <h5 class="card-title">Chai Tea</h5>
+            <p class="card-text">Spiced black tea with cinnamon, cardamom, and ginger for a warming blend.</p>
+            <p class="card-text"><strong>P160</strong></p>
+            <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end Tea Products Content -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <!-- Modal for Green Tea -->
+    <div class="modal fade" id="greenTeaModal" tabindex="-1" aria-labelledby="greenTeaModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="greenTeaModalLabel">Green Tea</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="images/tea-feature.jpg" class="img-fluid mb-3" alt="Green Tea">
+            <p>Refreshing green tea with a light and grassy flavor, perfect for a calming experience. This tea is sourced from the finest leaves, providing a smooth and invigorating sip that promotes relaxation and well-being.</p>
+            <p><strong>Price: P120</strong></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Black Tea -->
+    <div class="modal fade" id="blackTeaModal" tabindex="-1" aria-labelledby="blackTeaModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="blackTeaModalLabel">Black Tea</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="images/black tea.webp" class="img-fluid mb-3" alt="Black Tea">
+            <p>Bold and robust black tea, ideal for a strong cup with a rich, malty taste. This classic tea offers a full-bodied experience, perfect for energizing your mornings or enjoying with a splash of milk.</p>
+            <p><strong>Price: P140</strong></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Herbal Tea -->
+    <div class="modal fade" id="herbalTeaModal" tabindex="-1" aria-labelledby="herbalTeaModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="herbalTeaModalLabel">Herbal Tea</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="images/herbal tea.webp" class="img-fluid mb-3" alt="Herbal Tea">
+            <p>Caffeine-free herbal infusion with chamomile and mint for relaxation. This soothing blend helps unwind after a long day, promoting restful sleep and gentle digestion.</p>
+            <p><strong>Price: P130</strong></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Oolong Tea -->
+    <div class="modal fade" id="oolongTeaModal" tabindex="-1" aria-labelledby="oolongTeaModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="oolongTeaModalLabel">Oolong Tea</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="images/Oolong-green-tea-in-a-teapot-with-chawan-bowls.webp" class="img-fluid mb-3" alt="Oolong Tea">
+            <p>Semi-oxidized tea with a floral aroma and smooth, complex flavor. This versatile tea bridges green and black teas, offering a unique taste profile that's both refreshing and robust.</p>
+            <p><strong>Price: P180</strong></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for White Tea -->
+    <div class="modal fade" id="whiteTeaModal" tabindex="-1" aria-labelledby="whiteTeaModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="whiteTeaModalLabel">White Tea</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="images/white tea.jpg" class="img-fluid mb-3" alt="White Tea">
+            <p>Delicate white tea with subtle sweetness and minimal processing. This rare tea is hand-picked and minimally oxidized, offering a light, elegant flavor with high antioxidant content.</p>
+            <p><strong>Price: P200</strong></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Chai Tea -->
+    <div class="modal fade" id="chaiTeaModal" tabindex="-1" aria-labelledby="chaiTeaModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="chaiTeaModalLabel">Chai Tea</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="images/chai tea.webp" class="img-fluid mb-3" alt="Chai Tea">
+            <p>Spiced black tea with cinnamon, cardamom, and ginger for a warming blend. This aromatic tea combines traditional spices with black tea for a comforting, flavorful experience.</p>
+            <p><strong>Price: P160</strong></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- Remove the container if you want to extend the Footer to full width. -->
+<!-- <div class="container my-5"> -->
+
+  <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row mt-4">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">About company</h5>
+
+          <p>
+            Welcome to Happy Teapot, where every sip is a moment of joy. We pride ourselves on serving the finest teas and coffees, crafted with care and passion to brighten your day.
+          </p>
+
+          <p>
+            Experience the warmth of our community and the richness of our brews, one cup at a time.
+          </p>
+
+          <div class="mt-4">
+            <!-- Facebook -->
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-facebook-f"></i></a>
+            <!-- Dribbble -->
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-dribbble"></i></a>
+            <!-- Twitter -->
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
+            <!-- Google + -->
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-google-plus-g"></i></a>
+            <!-- Linkedin -->
+          </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+
+          <form class="d-flex mb-4">
+            <input type="text" id="formControlLg" class="form-control form-control-lg me-2" placeholder="Search">
+            <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+
+          <ul class="fa-ul" style="margin-left: 1.65em;">
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Abatan Bauko Mountain Province 2621</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2"><a href="mailto:Happyteapot@gmail.com">Happyteapot@gmail.com</a></span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">09123456780</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">Kenneth Andaya</span>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+          <table class="table text-center text-white">
+            <tbody class="font-weight-normal">
+              <tr>
+                <td>Mon - Thu:</td>
+                <td>8am - 9pm</td>
+              </tr>
+              <tr>
+                <td>Fri - Sat:</td>
+                <td>8am - 1am</td>
+              </tr>
+              <tr>
+                <td>Sunday:</td>
+                <td>9am - 10pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+  </footer>
+<!-- </div> -->
+<!-- End of .container -->
+</html>

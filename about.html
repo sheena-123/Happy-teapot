@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <style>
+  </style>
+  </head>
+  <body>
+    <!-- navigation --> 
+<section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+  <div class="container-fluid">
+     <a class="navbar-brand" href="#">
+      <img src="images/logo.png" alt="Logo" width="80" height="80" class="d-inline-block align-text-middle">
+     HAPPY TEAPOT 
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house-fill" style="font-style: normal;"> Home</i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html" ><i class="bi bi-file-person"></i>About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-list"></i>
+            Products
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Cold drinks.html" ><i class="bi bi-cup-straw"></i>Cold Drinks</a></li>
+            <li><hr class="dropdown-divider"></li>
+             <li><a class="dropdown-item" href="Tea.html" ><i class="bi bi-cup-hot"></i></i>Tea</a></li>
+            <li><hr class="dropdown-divider"></li>
+             <li><a class="dropdown-item" href="Products.html" ><i class="bi bi-cup-hot"></i></i>All Products</a></li>
+           
+          </ul>
+            <li class="nav-item">
+          <a class="nav-link" href="contact.html" ><i class="bi bi-envelope"></i>Contact Us</a>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link Cart" href="cart.html" ><i class="bi bi-cart"></i>Cart</a>
+        </li>
+      </ul>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+  <a class="btn btn-outline-primary me-md-2" href="Register.html" ><i class="bi bi-person-plus"></i>Register</a>
+  <a class="btn btn-primary me-md-2" href="login.html" ><i class="bi bi-box-arrow-right"></i>Log-In</a>
+</div>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
+  </div>
+  </div>
+</nav>
+</section>
+<!-- end navigation -->
+
+<!-- About Us Content -->
+<section class="hero bg-light py-5" style="background-image: url('images/about.jpg'); background-size: cover; background-position: center;">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 text-white">
+        <h1 class="display-4 fw-bold">Welcome to Happy Teapot</h1>
+        <p class="lead">Your cozy corner for the finest teas and coffees in town. Relax, sip, and enjoy the moment.</p>
+        <a href="Products.html" class="btn btn-primary btn-lg">Explore Our Products</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end Hero Section -->
+
+<!-- Our Story Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="mb-4">Our Story</h2>
+        <p class="lead">Founded in 2020, Happy Teapot started as a small dream to bring the warmth of traditional tea ceremonies to modern life. We source the finest leaves and beans from around the world, ensuring every cup is a journey of flavor and comfort. Whether you're seeking a quiet afternoon tea or a bold coffee kick, our passionate team is here to serve you with a smile.</p>
+        <img src="images/tea-feature.jpg" alt="Tea Feature" class="img-fluid rounded mt-4">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end Our Story Section -->
+
+<!-- Our Mission Section -->
+<section class="bg-secondary text-white py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2 class="mb-4">Our Mission</h2>
+        <p>To create a welcoming space where every customer feels at home, savoring beverages that nourish the soul and foster connections. We are committed to sustainability, quality, and community.</p>
+      </div>
+      <div class="col-lg-6">
+        <img src="images/coffee-brain-caffeine-neuroscincces.webp" alt="Coffee Benefits" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end Our Mission Section -->
+
+<!-- Meet the Team Section -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Meet the Team</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="images/barista.png" class="card-img-top" alt="Team Member 1">
+          <div class="card-body">
+            <h5 class="card-title">Alice Johnson</h5>
+            <p class="card-text">Founder & Head Barista. Passionate about crafting the perfect brew since day one.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="images/Tspecialist.png" class="card-img-top" alt="Team Member 2">
+          <div class="card-body">
+            <h5 class="card-title">Bob Smith</h5>
+            <p class="card-text">Tea Specialist. Expert in sourcing and blending the world's finest teas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="images/customer service.jpg" class="card-img-top" alt="Team Member 3">
+          <div class="card-body">
+            <h5 class="card-title">Carol Lee</h5>
+            <p class="card-text">Customer Service Manager. Ensuring every visit is memorable and delightful.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end Meet the Team Section -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+  <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row mt-4">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">About company</h5>
+
+          <p>
+            Welcome to Happy Teapot, where every sip is a moment of joy. We pride ourselves on serving the finest teas and coffees, crafted with care and passion to brighten your day.
+          </p>
+
+          <p>
+            Experience the warmth of our community and the richness of our brews, one cup at a time.
+          </p>
+
+          <div class="mt-4">
+            <!-- Facebook -->
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-facebook-f"></i></a>
+            <!-- Dribbble -->
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-dribbble"></i></a>
+            <!-- Twitter -->
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
+            <!-- Google + -->
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-google-plus-g"></i></a>
+            <!-- Linkedin -->
+          </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+
+          <form class="d-flex mb-4">
+            <input type="text" id="formControlLg" class="form-control form-control-lg me-2" placeholder="Search">
+            <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+
+          <ul class="fa-ul" style="margin-left: 1.65em;">
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Abatan Bauko Mountain Province 2621</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2"><a href="mailto:Happyteapot@gmail.com">Happyteapot@gmail.com</a></span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">09123456780</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">Kenneth Andaya</span>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+          <table class="table text-center text-white">
+            <tbody class="font-weight-normal">
+              <tr>
+                <td>Mon - Thu:</td>
+                <td>8am - 9pm</td>
+              </tr>
+              <tr>
+                <td>Fri - Sat:</td>
+                <td>8am - 1am</td>
+              </tr>
+              <tr>
+                <td>Sunday:</td>
+                <td>9am - 10pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+  </footer>
+<!-- end footer -->
+  </html>

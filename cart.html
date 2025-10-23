@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<style>
+  /* Make table content shrink nicely on small screens */
+@media (max-width: 768px) {
+  .table {
+    font-size: 14px;
+  }
+
+  .table img {
+    width: 60px !important;
+  }
+
+  .input-group {
+    max-width: 100px !important;
+  }
+
+  .card {
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .table-responsive {
+    overflow-x: auto;
+  }
+}
+
+</style>
+  </head>
+  <body>
+    <!-- navigation --> 
+<section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+  <div class="container-fluid">
+     <a class="navbar-brand" href="#">
+      <img src="images/logo.png" alt="Logo" width="80" height="80" class="d-inline-block align-text-middle">
+     HAPPY TEAPOT 
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house-fill" style="font-style: normal;"> Home</i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html"><i class="bi bi-file-person"></i>About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-list"></i>
+            Products
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Cold drinks.html"><i class="bi bi-cup-straw"></i>Cold Drinks</a></li>
+            <li><hr class="dropdown-divider"></li>
+             <li><a class="dropdown-item" href="Tea.html" ><i class="bi bi-cup-hot"></i></i>Tea</a></li>
+             <li><hr class="dropdown-divider"></li>
+              <li><hr class="dropdown-divider"></li>
+             <li><a class="dropdown-item" href="Products.html" ><i class="bi bi-cup-hot"></i></i>All Products</a></li>
+          </ul>
+            <li class="nav-item">
+          <a class="nav-link" href="contact.html" ><i class="bi bi-envelope"></i>Contact Us</a>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link Cart" href="cart.html"><i class="bi bi-cart"></i>Cart</a>
+        </li>
+      </ul>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+  <a class="btn btn-outline-primary me-md-2" href="Register.html"><i class="bi bi-person-plus"></i>Register</a>
+  <a class="btn btn-primary me-md-2" href="login.html"><i class="bi bi-box-arrow-right"></i>Log-In</a>
+</div>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
+  </div>
+  </div>
+</nav>
+</section>
+<!-- end navigation -->
+
+<!-- Cart Content -->
+<section class="py-5">
+  <div class="container">
+    <h1 class="text-center mb-5">Your Shopping Cart</h1>
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Product</th>
+            <th scope="col">Name</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price</th>
+            <th scope="col">Total</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+  <tr>
+    <td><img src="images/iced coffee.jpg" alt="Iced Coffee" class="img-thumbnail" style="width: 80px;"></td>
+    <td>Iced Coffee</td>
+    <td>
+      <div class="input-group" style="max-width: 130px;">
+        <span class="input-group-text">Qty</span>
+        <input type="number" class="form-control text-center" value="1" min="1">
+      </div>
+    </td>
+    <td>P150.00</td>
+    <td>P150.00</td>
+  </tr>
+
+  <tr>
+    <td><img src="images/white tea.jpg" alt="White Tea" class="img-thumbnail" style="width: 80px;"></td>
+    <td>White Tea</td>
+    <td>
+      <div class="input-group" style="max-width: 130px;">
+        <span class="input-group-text">Qty</span>
+        <input type="number" class="form-control text-center" value="2" min="1">
+      </div>
+    </td>
+    <td>P200.00</td>
+    <td>P400.00</td>
+  </tr>
+
+  <tr>
+    <td><img src="images/lemonade.webp" alt="Fresh Lemonade" class="img-thumbnail" style="width: 80px;"></td>
+    <td>Fresh Lemonade</td>
+    <td>
+      <div class="input-group" style="max-width: 130px;">
+        <span class="input-group-text">Qty</span>
+        <input type="number" class="form-control text-center" value="1" min="1">
+      </div>
+    </td>
+    <td>P120.00</td>
+    <td>P120.00</td>
+  </tr>
+</tbody>
+
+      </table>
+    </div>
+    <div class="row justify-content-end">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Cart Summary</h5>
+            <p class="card-text">Subtotal: P670.00</p>
+            <p class="card-text">Tax: P14.00</p>
+            <p class="card-text"><strong>Total: P656.00</strong></p>
+            <a href="Products.html" class="btn btn-success w-100">Proceed to Checkout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end cart content -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+
+
+  <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row mt-4">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">About company</h5>
+
+          <p>
+            Welcome to Happy Teapot, where every sip is a moment of joy. We pride ourselves on serving the finest teas and coffees, crafted with care and passion to brighten your day.
+          </p>
+
+          <p>
+            Experience the warmth of our community and the richness of our brews, one cup at a time.
+          </p>
+
+          <div class="mt-4">
+            <!-- Facebook -->
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-facebook-f"></i></a>
+            <!-- Dribbble -->
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-dribbble"></i></a>
+            <!-- Twitter -->
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
+            <!-- Google + -->
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-google-plus-g"></i></a>
+            <!-- Linkedin -->
+          </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+
+          <form class="d-flex mb-4">
+            <input type="text" id="formControlLg" class="form-control form-control-lg me-2" placeholder="Search">
+            <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+
+          <ul class="fa-ul" style="margin-left: 1.65em;">
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Abatan Bauko Mountain Province 2621</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2"><a href="mailto:Happyteapot@gmail.com">Happyteapot@gmail.com</a></span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">09123456780</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">Kenneth Andaya</span>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+          <table class="table text-center text-white">
+            <tbody class="font-weight-normal">
+              <tr>
+                <td>Mon - Thu:</td>
+                <td>8am - 9pm</td>
+              </tr>
+              <tr>
+                <td>Fri - Sat:</td>
+                <td>8am - 1am</td>
+              </tr>
+              <tr>
+                <td>Sunday:</td>
+                <td>9am - 10pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+  </footer>
+<!-- </div> -->
+<!-- End of .container -->
+</html>

@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <style>
+    .card-img-top {
+      height: 300px;
+      object-fit: fill;
+    }
+  </style>
+  </head>
+  <body>
+    <!-- navigation --> 
+<section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+  <div class="container-fluid">
+     <a class="navbar-brand" href="#">
+      <img src="images/logo.png" alt="Logo" width="80" height="80" class="d-inline-block align-text-middle">
+     HAPPY TEAPOT 
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house-fill" style="font-style: normal;"> Home</i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html"><i class="bi bi-file-person"></i>About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-list"></i>
+            Products
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Cold drinks.html"><i class="bi bi-cup-straw"></i>Cold Drinks</a></li>
+            <li><hr class="dropdown-divider"></li>
+             <li><a class="dropdown-item" href="Tea.html" ><i class="bi bi-cup-hot"></i></i>Tea</a></li>
+              <li><hr class="dropdown-divider"></li>
+             <li><a class="dropdown-item" href="Products.html" ><i class="bi bi-cup-hot"></i></i>All Products</a></li>
+          </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html" ><i class="bi bi-envelope"></i>Contact Us</a>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link Cart" href="cart.html"><i class="bi bi-cart"></i>Cart</a>
+        </li>
+      </ul>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+  <a class="btn btn-outline-primary me-md-2" href="Register.html"><i class="bi bi-person-plus"></i>Register</a>
+  <a class="btn btn-primary me-md-2" href="login.html"><i class="bi bi-box-arrow-right"></i>Log-In</a>
+</div>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
+  </div>
+  </div>
+</nav>
+</section>
+<!-- end navigation -->
+
+<!-- Cold Drinks Content -->
+<section class="py-5">
+  <div class="container">
+    <h1 class="text-center mb-5">Our Cold Drinks</h1>
+    <div class="row">
+      <!-- Iced Coffee -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="images/iced coffee.jpg" class="card-img-top" alt="Iced Coffee" data-bs-toggle="modal" data-bs-target="#icedCoffeeModal" style="cursor: pointer;">
+          <div class="card-body">
+            <h5 class="card-title">Iced Coffee</h5>
+            <p class="card-text">Refreshing cold coffee brewed with premium beans, served over ice for a perfect pick-me-up.</p>
+            <p class="card-text"><strong>P140</strong></p>
+            <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Cold Brew -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="images/istockphoto-171109205-612x612.jpg" class="card-img-top" alt="Cold Brew" data-bs-toggle="modal" data-bs-target="#coldBrewModal" style="cursor: pointer;">
+          <div class="card-body">
+            <h5 class="card-title">Cold Brew</h5>
+            <p class="card-text">Smooth and bold cold brew coffee, steeped for 12 hours for maximum flavor and minimal bitterness.</p>
+            <p class="card-text"><strong>P125</strong></p>
+            <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Vanilla Frappuccino -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="images/vanila frap.jpg" class="card-img-top" alt="Vanilla Frappuccino" data-bs-toggle="modal" data-bs-target="#vanillaFrappuccinoModal" style="cursor: pointer;">
+          <div class="card-body">
+            <h5 class="card-title">Vanilla Frappuccino</h5>
+            <p class="card-text">Creamy blended coffee with vanilla syrup, topped with whipped cream for a delightful treat.</p>
+            <p class="card-text"><strong>P160</strong></p>
+            <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Lemonade -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="images/lemonade.webp" class="card-img-top" alt="Fresh Lemonade" data-bs-toggle="modal" data-bs-target="#lemonadeModal" style="cursor: pointer;">
+          <div class="card-body">
+            <h5 class="card-title">Fresh Lemonade</h5>
+            <p class="card-text">Tangy and refreshing lemonade made with real lemons, perfect for a non-caffeinated option.</p>
+            <p class="card-text"><strong>P50</strong></p>
+            <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Iced Tea -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="images/Iced-Tea-.jpg" class="card-img-top" alt="Iced Tea" data-bs-toggle="modal" data-bs-target="#icedTeaModal" style="cursor: pointer;">
+          <div class="card-body">
+            <h5 class="card-title">Iced Tea</h5>
+            <p class="card-text">Chilled black tea with a hint of lemon, served over ice for a light and refreshing drink.</p>
+            <p class="card-text"><strong>P100</strong></p>
+            <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Mocha Frappe -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="images/mocha frap.webp" class="card-img-top" alt="Mocha Frappe" data-bs-toggle="modal" data-bs-target="#mochaFrappeModal" style="cursor: pointer;">
+          <div class="card-body">
+            <h5 class="card-title">Mocha Frappe</h5>
+            <p class="card-text">Decadent chocolate and coffee blend, blended with ice and topped with chocolate shavings.</p>
+            <p class="card-text"><strong>P150</strong></p>
+            <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end Cold Drinks Content -->
+
+    <!-- Modals for Cold Drinks -->
+    <!-- Iced Coffee Modal -->
+    <div class="modal fade" id="icedCoffeeModal" tabindex="-1" aria-labelledby="icedCoffeeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="icedCoffeeModalLabel">Iced Coffee</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="images/iced coffee.jpg" class="img-fluid" alt="Iced Coffee">
+              </div>
+              <div class="col-md-6">
+                <h4>Refreshing cold coffee brewed with premium beans, served over ice for a perfect pick-me-up.</h4>
+                <p class="h5 text-primary"><strong>P140</strong></p>
+                <a href="cart.html" class="btn btn-primary btn-lg">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cold Brew Modal -->
+    <div class="modal fade" id="coldBrewModal" tabindex="-1" aria-labelledby="coldBrewModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="coldBrewModalLabel">Cold Brew</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="images/istockphoto-171109205-612x612.jpg" class="img-fluid" alt="Cold Brew">
+              </div>
+              <div class="col-md-6">
+                <h4>Smooth and bold cold brew coffee, steeped for 12 hours for maximum flavor and minimal bitterness.</h4>
+                <p class="h5 text-primary"><strong>P125</strong></p>
+                <a href="cart.html" class="btn btn-primary btn-lg">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vanilla Frappuccino Modal -->
+    <div class="modal fade" id="vanillaFrappuccinoModal" tabindex="-1" aria-labelledby="vanillaFrappuccinoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="vanillaFrappuccinoModalLabel">Vanilla Frappuccino</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="images/vanila frap.jpg" class="img-fluid" alt="Vanilla Frappuccino">
+              </div>
+              <div class="col-md-6">
+                <h4>Creamy blended coffee with vanilla syrup, topped with whipped cream for a delightful treat.</h4>
+                <p class="h5 text-primary"><strong>P160</strong></p>
+                <a href="cart.html" class="btn btn-primary btn-lg">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lemonade Modal -->
+    <div class="modal fade" id="lemonadeModal" tabindex="-1" aria-labelledby="lemonadeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="lemonadeModalLabel">Fresh Lemonade</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="images/lemonade.webp" class="img-fluid" alt="Fresh Lemonade">
+              </div>
+              <div class="col-md-6">
+                <h4>Tangy and refreshing lemonade made with real lemons, perfect for a non-caffeinated option.</h4>
+                <p class="h5 text-primary"><strong>P50</strong></p>
+                <a href="cart.html" class="btn btn-primary btn-lg">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Iced Tea Modal -->
+    <div class="modal fade" id="icedTeaModal" tabindex="-1" aria-labelledby="icedTeaModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="icedTeaModalLabel">Iced Tea</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="images/Iced-Tea-.jpg" class="img-fluid" alt="Iced Tea">
+              </div>
+              <div class="col-md-6">
+                <h4>Chilled black tea with a hint of lemon, served over ice for a light and refreshing drink.</h4>
+                <p class="h5 text-primary"><strong>P100</strong></p>
+                <a href="cart.html" class="btn btn-primary btn-lg">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mocha Frappe Modal -->
+    <div class="modal fade" id="mochaFrappeModal" tabindex="-1" aria-labelledby="mochaFrappeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="mochaFrappeModalLabel">Mocha Frappe</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="images/mocha frap.webp" class="img-fluid" alt="Mocha Frappe">
+              </div>
+              <div class="col-md-6">
+                <h4>Decadent chocolate and coffee blend, blended with ice and topped with chocolate shavings.</h4>
+                <p class="h5 text-primary"><strong>P150</strong></p>
+                <a href="cart.html" class="btn btn-primary btn-lg">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+<!-- <div class="container my-5"> -->
+
+  <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row mt-4">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">About company</h5>
+
+          <p>
+            Welcome to Happy Teapot, where every sip is a moment of joy. We pride ourselves on serving the finest teas and coffees, crafted with care and passion to brighten your day.
+          </p>
+
+          <p>
+            Experience the warmth of our community and the richness of our brews, one cup at a time.
+          </p>
+
+          <div class="mt-4">
+            <!-- Facebook -->
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-facebook-f"></i></a>
+            <!-- Dribbble -->
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-dribbble"></i></a>
+            <!-- Twitter -->
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
+            <!-- Google + -->
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-google-plus-g"></i></a>
+            <!-- Linkedin -->
+          </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+
+          <form class="d-flex mb-4">
+            <input type="text" id="formControlLg" class="form-control form-control-lg me-2" placeholder="Search">
+            <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+
+          <ul class="fa-ul" style="margin-left: 1.65em;">
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Abatan Bauko Mountain Province 2621</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2"><a href="mailto:Happyteapot@gmail.com">Happyteapot@gmail.com</a></span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">09123456780</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">Kenneth Andaya</span>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+          <table class="table text-center text-white">
+            <tbody class="font-weight-normal">
+              <tr>
+                <td>Mon - Thu:</td>
+                <td>8am - 9pm</td>
+              </tr>
+              <tr>
+                <td>Fri - Sat:</td>
+                <td>8am - 1am</td>
+              </tr>
+              <tr>
+                <td>Sunday:</td>
+                <td>9am - 10pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+  </footer>
+<!-- </div> -->
+<!-- End of .container -->
+</html>
